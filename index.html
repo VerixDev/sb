@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать файл</title>
+</head>
+<body>
+
+<h1>Скачать файл</h1>
+<a id="downloadLink" href="sb.apk" download>
+    <button>Скачать файл</button>
+</a>
+
+<script>
+    // Замените 'file.txt' на путь к вашему файлу
+    const filePath = 'sb.apk';
+    
+    // Если файл не находится в той же директории, укажите полный URL
+    document.getElementById('downloadLink').href = filePath;
+</script>
+
+</body>
+</html>
